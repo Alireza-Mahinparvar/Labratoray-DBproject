@@ -1,0 +1,23 @@
+11/17/2021 11:21:47 
+SELECT hashed_pass FROM employee WHERE emp_id = 'e2'
+1 row(s) affected
+11/17/2021 11:21:47 
+select rs_flag, pi_flag, la_flag
+                from employee
+                where emp_id = 'e2'
+1 row(s) affected
+11/17/2021 11:21:56 
+SELECT dept_id FROM employee where emp_id = 'e2'
+1 row(s) affected
+11/17/2021 11:21:56 
+SELECT * FROM project WHERE dept_id = '1'
+1 row(s) affected
+11/17/2021 11:21:56 
+SELECT pro_id FROM project ORDER BY pro_id desc
+4 row(s) affected
+11/17/2021 11:22:00 
+INSERT INTO project (pro_id, pro_name, pro_status, dept_id, proj_leader) VALUES (7, 'sample', 'Planned', '1', 'e2')
+1 row(s) affected
+11/17/2021 11:22:00 
+SELECT * FROM project WHERE pro_id = 7
+1 row(s) affected
